@@ -2,6 +2,7 @@ package com.crud.tasks.service;
 
 import com.crud.tasks.domain.*;
 import com.crud.tasks.trello.client.TrelloClient;
+import com.crud.tasks.trello.config.AdminConfig;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -22,11 +23,11 @@ public class TrelloServiceTest {
     @Mock
     private TrelloClient trelloClient;
 
-    //@Mock
-    //private SimpleEmailService emailService;
+    @Mock
+    private SimpleMailService emailService;
 
-    //@Mock
-    //private AdminConfig adminConfig;
+    @Mock
+    private AdminConfig adminConfig;
 
     @Test
     public void shouldFetchTrelloBoard() {

@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "admin.mail",
+      "type": "java.lang.String",
+      "description": "Description for admin.mail."
+  }
+] }
